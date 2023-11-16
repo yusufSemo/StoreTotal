@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="750.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.storet.Controls">
+    <TableView fx:id="myTable" editable="true" layoutX="300.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="125.0">
+      <columns>
+          <TableColumn fx:id="weekDay" prefWidth="100.0" text="WeekDay" />
+          <TableColumn fx:id="date" text="Date" />
+          <TableColumn fx:id="card" prefWidth="110.0" sortable="false" text="Card" />
+          <TableColumn fx:id="cash" prefWidth="110.0" text="cash" />
+          <TableColumn fx:id="online" prefWidth="110.0" text="Online" />
+          <TableColumn fx:id="total" prefWidth="120.0" text="Total" />
+      </columns>
+    </TableView>
+    <Button fx:id="SubmitB" layoutX="525.0" layoutY="101.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="Update" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="90.0" />
+    <TextField fx:id="inputWD" editable="false" layoutX="75.0" layoutY="110.0" prefHeight="33.0" prefWidth="90.0" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="90.0" />
+    <TextField fx:id="inputCard" layoutX="186.0" layoutY="98.0" prefHeight="33.0" prefWidth="100.0" AnchorPane.leftAnchor="235.0" AnchorPane.topAnchor="90.0" />
+    <TextField fx:id="inputCash" layoutX="296.0" layoutY="100.0" prefHeight="33.0" prefWidth="100.0" AnchorPane.leftAnchor="345.0" AnchorPane.topAnchor="90.0" />
+    <TextField fx:id="inputOnline" layoutX="418.0" layoutY="99.0" prefHeight="33.0" prefWidth="100.0" AnchorPane.leftAnchor="455.0" AnchorPane.topAnchor="90.0" />
+    <Label id="mainTitle" layoutX="76.0" layoutY="36.0" prefHeight="40.0" prefWidth="194.0" text="Your Total" />
+    <TextField fx:id="inputDate" editable="false" layoutX="150.0" layoutY="99.0" prefHeight="33.0" prefWidth="70.0" AnchorPane.leftAnchor="155.0" AnchorPane.topAnchor="90.0" />
+   <Button fx:id="last" layoutX="67.0" layoutY="743.0" mnemonicParsing="false" text="&lt; Last Month" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="50.0" />
+   <Button fx:id="next" layoutX="619.0" layoutY="746.0" mnemonicParsing="false" text="Next Month &gt;" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="50.0" />
+</AnchorPane>

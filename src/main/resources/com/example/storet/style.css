@@ -1,7 +1,7 @@
 /* Apply styling to the entire application */
 .root {
     -fx-font-family: "Arial";
-    -fx-background-color: #f4f4f4;
+    -fx-background-color: #722F37;
     -fx-padding: 10;
 }
 #title{
@@ -30,6 +30,13 @@
 /* Apply styling to labels */
 .label {
     -fx-font-size: 18px;
+
+}
+#mainTitle{
+    -fx-font-family: "impact";
+    -fx-font-size: 35px;
+
+    -fx-text-fill: #FFFFFF /* Change the text color to red */
 }
 
 /* Apply styling to headings */
@@ -59,3 +66,45 @@
 .menu-item {
     -fx-font-size: 14px;
 }
+/* Table Styles */
+.table-view {
+    -fx-table-cell-border-color: derive(-fx-base, 20%);
+}
+
+/* Table Header Styles */
+.table-view .column-header-background {
+    -fx-background-color: -fx-base;
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: -fx-base;
+    -fx-border-color: derive(-fx-base, 20%);
+}
+
+/* Table Row Styles */
+.table-row-cell:odd {
+    -fx-background-color: #f4f4f4; /* Alternate row color */
+}
+
+/* Hover Effect for Table Rows */
+.table-row-cell:hover {
+    -fx-background-color: #FFFFF0; /* Hovered row background color */
+    -fx-text-fill: #FFFFFF; /* Hovered text color */
+}
+
+/* Selected Row Styles */
+.table-row-cell:selected {
+    -fx-background-color: #722F37; /* Selected row background color */
+    -fx-text-fill: #FFFFFF; /* Selected text color */
+}
+
+
+/* Table Column Styles */
+.table-column {
+    -fx-alignment: CENTER;
+    -fx-padding: 5px;
+}
+
+/* Add more styles based on your requirements */
+

@@ -16,8 +16,10 @@ public class HelloApplication extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("hello-view.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("workPage.fxml")));
         Scene scene = new Scene(root);
+        primaryStage.setMinWidth(750);
+        primaryStage.setMinHeight(800);
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("style.css")).toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.show();
