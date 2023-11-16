@@ -17,6 +17,10 @@ public class Controls implements Initializable {
     @FXML
     private Button SubmitB;
     @FXML
+    private Button next;
+    @FXML
+    private Button last;
+    @FXML
     private TextField inputCard;
 
     @FXML
